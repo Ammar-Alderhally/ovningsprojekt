@@ -1,6 +1,7 @@
 import express from "express";
 import { customers } from "./routes/customers";
 import { orders } from "./routes/orders";
+import { returns } from "./routes/returns";
 
 export function createApp() {
   const app = express();
@@ -10,5 +11,6 @@ export function createApp() {
   });
   app.use(customers);
   app.use(orders);
+  app.use(returns);
   return app;
 }

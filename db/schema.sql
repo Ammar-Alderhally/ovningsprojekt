@@ -1,6 +1,7 @@
 -- Schema för övningsprojektet: kunder, beställningar och rabattkoder.
 -- Schemat har vuxit under flera år och har kända svagheter. De är en del av övningen.
 
+DROP TABLE IF EXISTS returns;
 DROP TABLE IF EXISTS order_lines;
 DROP TABLE IF EXISTS orders;
 DROP TABLE IF EXISTS discounts;
@@ -35,4 +36,13 @@ CREATE TABLE order_lines (
   product     TEXT NOT NULL,
   quantity    INTEGER NOT NULL,
   unit_price  NUMERIC(10, 2) NOT NULL
+);
+
+CREATE TABLE returns (
+  id             SERIAL PRIMARY KEY,
+  order_id       INTEGER NOT NULL,
+  reason         TEXT,
+  refund_amount  NUMERIC(10, 2) NOT NULL,
+  label_url      TEXT,
+  created_at     TIMESTAMPTZ NOT NULL DEFAULT now()
 );
