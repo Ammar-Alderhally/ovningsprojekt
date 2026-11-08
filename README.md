@@ -67,7 +67,7 @@ sessions/                  dina sessionsloggar
 Projektbeskrivningen finns i kursens material. I korthet:
 
 1. Bygg riggen i det här repot: skills och kommandon, subagenter, hooks, behörigheter och en kodstandard som kontrolleras automatiskt.
-2. Använd riggen på tre arbeten: en ny funktion ur `docs/user-stories.md`, granskningen av pull requestet som kursledaren delar ut, och en modernisering av `src/legacy/price_calc.py`.
+2. Använd riggen på tre arbeten: en ny funktion ur `docs/user-stories.md`, granskningen av pull requestet som kursledaren delar ut under seminariet, och en modernisering av `src/legacy/price_calc.py`.
 3. Skriv en sessionslogg i `sessions/` efter varje arbetspass.
 4. Tagga repot `inlamning` när du lämnar in.
 
